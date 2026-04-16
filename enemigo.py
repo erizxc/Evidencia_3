@@ -14,5 +14,11 @@ class Enemigo:
     
     def get_daño(self):
         return self.__daño
-
+    
+    def get_nivel(self):
+        return self.__nivel
+    
+    def get_tipo(self):
+        return self.__tipo
+    
 
