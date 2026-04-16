@@ -6,6 +6,8 @@ class Enemigo:
         self.__nivel = nivel
         self.__tipo = tipo
     
+
+    #GETTERS
     def get_nombre(self):
         return self.__nombre
     
@@ -21,4 +23,8 @@ class Enemigo:
     def get_tipo(self):
         return self.__tipo
     
+    #SETTERS
+    def set_nombre(self, nombre):
+        self.__nombre = nombre
+        
 
