@@ -9,6 +9,17 @@ class Enemigo:
     
     def info(self):
         print(f"Nombre: {self.__nombre}, Vida: {self.__vida}, Daño: {self.__daño}, Nivel: {self.__nivel}, Tipo: {self.__tipo}")
+
+    def atacar(self):
+        if self.__vida == self.__vida_base:
+            return f"{self.__nombre} ha hecho {self.__daño} de daño"
+        
+        elif self.__vida <= self.__vida_base / 2:
+            return f"{self.__nombre} ha hecho {self.__daño + 7} de daño"
+        
+        else:
+            return f"{self.__nombre} ha hecho {self.__daño} de daño"
+
     
     #GETTERS
     def get_nombre(self):
