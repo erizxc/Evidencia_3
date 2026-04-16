@@ -6,6 +6,9 @@ class Enemigo:
         self.__nivel = nivel
         self.__tipo = tipo
     
+    def info(self):
+        print(f"Nombre: {self.__nombre}, Vida: {self.__vida}, Daño: {self.__daño}, Nivel: {self.__nivel}, Tipo: {self.__tipo}")
+    
 
     #GETTERS
     def get_nombre(self):
