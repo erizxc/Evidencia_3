@@ -6,5 +6,13 @@ class Enemigo:
         self.__nivel = nivel
         self.__tipo = tipo
     
+    def get_nombre(self):
+        return self.__nombre
+    
+    def get_vida(self):
+        return self.__vida
+    
+    def get_daño(self):
+        return self.__daño
 
 
