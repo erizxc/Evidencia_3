@@ -26,5 +26,19 @@ class Enemigo:
     #SETTERS
     def set_nombre(self, nombre):
         self.__nombre = nombre
-        
+
+    def set_vida(self, vida):
+        self.__vida = vida
+    
+    def set_daño(self, daño):
+        self.__daño = daño
+
+    def set_nivel(self, nivel):
+        self.__nivel = nivel
+    
+    def set_tipo(self, tipo):
+        self.__tipo = tipo
+
+    
+
 
