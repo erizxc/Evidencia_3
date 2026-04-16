@@ -19,6 +19,10 @@ class Enemigo:
         
         else:
             return f"{self.__nombre} ha hecho {self.__daño} de daño"
+    
+    def daño_recibido(self, daño_recibido):
+        self.__vida -= daño_recibido 
+        return f"{self.__nombre} ha recibido {daño_recibido} de daño, ahora tiene {self.__vida} de vida"
 
     
     #GETTERS
