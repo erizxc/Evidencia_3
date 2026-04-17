@@ -74,4 +74,10 @@ class Enemigo:
 #SE USA LA CLASE
 enemigo1 = Enemigo("Esqueleto", 100, 4, 1, "No muerto")
 
+enemigo1.info()
+print()
 
+print(enemigo1.atacar())
+print()
+
+print(enemigo1.daño_recibido(40))
