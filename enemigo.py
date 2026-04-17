@@ -22,7 +22,15 @@ class Enemigo:
     
     def daño_recibido(self, daño_recibido):
         self.__vida -= daño_recibido 
-        return f"{self.__nombre} ha recibido {daño_recibido} de daño, ahora tiene {self.__vida} de vida"
+
+        if self.__vida <= 0:
+            self.__vida = 0
+
+        if self.__vida > 0:
+          return f"{self.__nombre} ha recibido {daño_recibido} de daño, ahora tiene {self.__vida} de vida"
+    
+        else:
+            return f"{self.__nombre} ha sido derrotado"
 
     
     #GETTERS
