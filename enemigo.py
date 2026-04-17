@@ -71,6 +71,7 @@ class Enemigo:
     def set_tipo(self, tipo):
         self.__tipo = tipo
 
-    
+#SE USA LA CLASE
+enemigo1 = Enemigo("Esqueleto", 100, 4, 1, "No muerto")
 
 
